@@ -61,7 +61,7 @@ const Contact = () => (
 
         {/* Twitter Feed */}
         <div className="mt-16">
-          <SectionHeader title="LIVE TWEETS" subtitle="Follow @ClassiQDjFAZE on X" />
+          <SectionHeader title="LIVE TWEETS" subtitle="Follow @ClassiQDjFaze on X" />
           <div className="bg-card border border-border rounded-lg p-8 text-center">
             <p className="text-muted-foreground text-sm">
               Twitter/X feed will be embedded here once the X handle is confirmed. Follow for live updates!
