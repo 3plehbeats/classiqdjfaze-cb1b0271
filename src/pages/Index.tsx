@@ -38,7 +38,7 @@ const Index = () => (
           Ready to <span className="text-gold-gradient">Elevate</span> Your Event?
         </h2>
         <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-          Book ClassiQ DjFAZE for an unforgettable experience.
+          Book ClassiQDjFaze for an unforgettable experience.
         </p>
         <Link
           to="/contact"
