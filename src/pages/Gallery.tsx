@@ -12,8 +12,16 @@ import img6 from "@/assets/gallery-2.jpeg";
 import img7 from "@/assets/gallery-3.jpeg";
 import img8 from "@/assets/gallery-4.jpeg";
 import img9 from "@/assets/gallery-5.jpeg";
+import img10 from "@/assets/gallery-6.jpg";
+import img11 from "@/assets/gallery-7.jpg";
+import img12 from "@/assets/gallery-8.jpg";
+import img13 from "@/assets/gallery-9.jpg";
+import img14 from "@/assets/gallery-10.jpg";
+import img15 from "@/assets/gallery-11.jpg";
+import img16 from "@/assets/gallery-12.jpg";
+import img17 from "@/assets/gallery-13.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17];
 
 const Gallery = () => {
   const [selected, setSelected] = useState<string | null>(null);
@@ -22,7 +30,7 @@ const Gallery = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
-          <SectionHeader title="GALLERY" subtitle="ClassiQDjFaze in pictures" />
+          <SectionHeader title="GALLERY" subtitle="ClassiQDJFAZE in pictures" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((src, i) => (
               <button
@@ -41,7 +49,6 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Lightbox */}
       {selected && (
         <div
           className="fixed inset-0 z-50 bg-background/95 flex items-center justify-center p-4"
