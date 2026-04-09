@@ -39,7 +39,7 @@ const HeroSlider = () => {
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="animate-slide-in">
           <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-wider mb-4">
-            <span className="text-gold-gradient">{slides[current].title}</span>
+            <span className="text-brand-gradient">{slides[current].title}</span>
           </h1>
           <p className="font-heading text-lg md:text-2xl tracking-[0.3em] uppercase text-foreground/80">
             {slides[current].subtitle}

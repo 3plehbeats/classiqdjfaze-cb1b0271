@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo-cdf.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -11,6 +12,7 @@ const navLinks = [
   { to: "/videos", label: "Videos" },
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
+  { to: "/admin", label: "Admin" },
 ];
 
 const Navbar = () => {
@@ -20,9 +22,12 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="font-heading text-2xl font-bold tracking-wider">
-          <span className="text-gold-gradient">ClassiQ</span>
-          <span className="text-foreground">DjFaze</span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="ClassiQDjFaze Logo" className="h-10 w-auto" />
+          <span className="font-heading text-2xl font-bold tracking-wider">
+            <span className="text-brand-gradient">ClassiQ</span>
+            <span className="text-foreground">DjFaze</span>
+          </span>
         </Link>
 
         {/* Desktop */}

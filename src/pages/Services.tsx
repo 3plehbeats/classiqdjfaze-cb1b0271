@@ -20,7 +20,7 @@ const Services = () => (
         <SectionHeader title="SERVICES" subtitle="CDF Entertainment – Full Service Entertainment Company" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
-            <div key={i} className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 hover:glow-gold transition-all duration-300 group">
+            <div key={i} className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 hover:glow-green transition-all duration-300 group">
               <s.icon className="w-8 h-8 text-primary mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-heading text-lg font-semibold mb-2">{s.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
