@@ -51,7 +51,7 @@ const Contact = () => (
               />
               <button
                 type="submit"
-                className="w-full bg-gold-gradient text-primary-foreground font-heading text-sm uppercase tracking-widest py-3 rounded-lg hover:opacity-90 transition-opacity"
+                className="w-full bg-brand-gradient text-foreground font-heading text-sm uppercase tracking-widest py-3 rounded-lg hover:opacity-90 transition-opacity"
               >
                 Send Message
               </button>

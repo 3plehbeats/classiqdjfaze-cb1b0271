@@ -21,7 +21,7 @@ const Index = () => (
         <SectionHeader title="WHAT I DO" subtitle="Delivering premium entertainment experiences" />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {highlights.map((h, i) => (
-            <div key={i} className="bg-secondary rounded-lg p-6 text-center hover:glow-gold transition-all duration-300 group">
+            <div key={i} className="bg-secondary rounded-lg p-6 text-center hover:glow-green transition-all duration-300 group">
               <h.icon className="w-10 h-10 text-primary mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-heading text-lg font-semibold mb-2">{h.title}</h3>
               <p className="text-muted-foreground text-sm">{h.desc}</p>
@@ -35,14 +35,14 @@ const Index = () => (
     <section className="section-padding bg-background text-center">
       <div className="container mx-auto">
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">
-          Ready to <span className="text-gold-gradient">Elevate</span> Your Event?
+          Ready to <span className="text-brand-gradient">Elevate</span> Your Event?
         </h2>
         <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
           Book ClassiQDjFaze for an unforgettable experience.
         </p>
         <Link
           to="/contact"
-          className="inline-block bg-gold-gradient text-primary-foreground font-heading text-sm uppercase tracking-widest px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
+          className="inline-block bg-brand-gradient text-foreground font-heading text-sm uppercase tracking-widest px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
         >
           Get in Touch
         </Link>

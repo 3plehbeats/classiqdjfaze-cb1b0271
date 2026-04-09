@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="flex flex-col items-start gap-4">
           <img src={logo} alt="CDF Entertainment Logo" className="w-24 h-auto" />
           <h3 className="font-heading text-xl font-bold">
-            <span className="text-gold-gradient">ClassiQ</span>DjFaze
+            <span className="text-brand-gradient">ClassiQ</span>DjFaze
           </h3>
           <p className="text-muted-foreground text-sm leading-relaxed">
             CEO, CDF Entertainment. Piper of Remix. In-house DJ at StarPlus 101.5FM & Konga 103.7FM.
