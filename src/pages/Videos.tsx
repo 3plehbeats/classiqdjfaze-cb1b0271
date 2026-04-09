@@ -6,7 +6,7 @@ const Videos = () => (
   <Layout>
     <section className="section-padding">
       <div className="container mx-auto">
-        <SectionHeader title="VIDEOS" subtitle="Watch ClassiQ DjFAZE in action on YouTube" />
+        <SectionHeader title="VIDEOS" subtitle="Watch ClassiQDJFAZE in action on YouTube" />
         <div className="flex flex-col items-center justify-center min-h-[300px] bg-card rounded-lg border border-border p-12 text-center">
           <Film className="w-16 h-16 text-primary mb-6" />
           <h3 className="font-heading text-2xl font-semibold mb-3">Videos Coming Soon</h3>
