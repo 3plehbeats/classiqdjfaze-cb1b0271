@@ -6,7 +6,7 @@ const About = () => (
   <Layout>
     <section className="section-padding">
       <div className="container mx-auto">
-        <SectionHeader title="ABOUT" subtitle="ClassiQDjFaze – Official Profile" />
+        <SectionHeader title="ABOUT" subtitle="ClassiQDJFAZE – Official Profile" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="relative">
