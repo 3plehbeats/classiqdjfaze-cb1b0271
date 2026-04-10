@@ -12,7 +12,6 @@ const navLinks = [
   { to: "/videos", label: "Videos" },
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact" },
-  { to: "/admin", label: "Admin" },
 ];
 
 const Navbar = () => {
@@ -26,7 +25,7 @@ const Navbar = () => {
           <img src={logo} alt="ClassiQDJFAZE Logo" className="h-10 w-auto" />
           <span className="font-heading text-2xl font-bold tracking-wider">
             <span className="text-brand-gradient">ClassiQ</span>
-            <span className="text-foreground">DJFAZE</span>
+            <span className="text-foreground">DjFAZE</span>
           </span>
         </Link>
 
