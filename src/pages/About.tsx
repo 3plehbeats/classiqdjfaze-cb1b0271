@@ -6,11 +6,11 @@ const About = () => (
   <Layout>
     <section className="section-padding">
       <div className="container mx-auto">
-        <SectionHeader title="ABOUT" subtitle="ClassiQDJFAZE – Official Profile" />
+        <SectionHeader title="ABOUT" subtitle="ClassiQDjFAZE – Official Profile" />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="relative">
-            <img src={hero1} alt="ClassiQDJFAZE" className="rounded-lg w-full object-cover max-h-[600px]" />
+            <img src={hero1} alt="ClassiQDjFAZE" className="rounded-lg w-full object-cover max-h-[600px]" />
             <div className="absolute inset-0 rounded-lg border-2 border-primary/20" />
           </div>
 

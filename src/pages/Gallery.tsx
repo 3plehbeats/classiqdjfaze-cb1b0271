@@ -30,7 +30,7 @@ const Gallery = () => {
     <Layout>
       <section className="section-padding">
         <div className="container mx-auto">
-          <SectionHeader title="GALLERY" subtitle="ClassiQDJFAZE in pictures" />
+          <SectionHeader title="GALLERY" subtitle="ClassiQDjFAZE in pictures" />
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((src, i) => (
               <button

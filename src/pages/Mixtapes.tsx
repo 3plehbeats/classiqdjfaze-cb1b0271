@@ -6,7 +6,7 @@ const Mixtapes = () => (
   <Layout>
     <section className="section-padding">
       <div className="container mx-auto">
-        <SectionHeader title="MIXTAPES" subtitle="Official DJ mixes from ClassiQDJFAZE on Audiomack" />
+        <SectionHeader title="MIXTAPES" subtitle="Official DJ mixes from ClassiQDjFAZE on Audiomack" />
         <div className="flex flex-col items-center justify-center min-h-[300px] bg-card rounded-lg border border-border p-12 text-center">
           <Music className="w-16 h-16 text-primary mb-6" />
           <h3 className="font-heading text-2xl font-semibold mb-3">Mixtapes Coming Soon</h3>
