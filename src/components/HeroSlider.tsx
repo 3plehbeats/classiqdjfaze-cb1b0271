@@ -5,7 +5,7 @@ import hero3 from "@/assets/hero-3.jpeg";
 import hero4 from "@/assets/hero-4.jpeg";
 
 const slides = [
-  { image: hero1, title: "ClassiQDJFAZE", subtitle: "The Piper of Remix" },
+  { image: hero1, title: "ClassiQDjFAZE", subtitle: "The Piper of Remix" },
   { image: hero2, title: "CDF ENTERTAINMENT", subtitle: "Music • Events • Production" },
   { image: hero3, title: "LIVE ON AIR", subtitle: "StarPlus 101.5FM & Konga 103.7FM" },
   { image: hero4, title: "BOOK NOW", subtitle: "Premium DJ Experience" },
