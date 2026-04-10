@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
-import { Music, Radio, Disc3, Calendar, Mic, Film, Palette, Users } from "lucide-react";
+import { Music, Radio, Disc3, Calendar, Mic, Palette, Users } from "lucide-react";
 
 const services = [
   { icon: Disc3, title: "DJ Services", desc: "Professional DJ sets for clubs, events, weddings, corporate gatherings and all celebrations." },
@@ -8,7 +8,6 @@ const services = [
   { icon: Mic, title: "Artist Management", desc: "Comprehensive artist management and development for upcoming and established artists." },
   { icon: Calendar, title: "Event Management", desc: "End-to-end event planning and management for concerts, launches and corporate events." },
   { icon: Radio, title: "Music Promotion", desc: "Strategic music promotion and marketing to amplify your reach across Nigeria." },
-  { icon: Film, title: "Video Production", desc: "Professional music video production, editing and post-production services." },
   { icon: Palette, title: "Graphic Design", desc: "Creative visual design for album covers, flyers, branding and promotional materials." },
   { icon: Users, title: "Entertainment Consultancy", desc: "Expert guidance and consultancy for entertainment industry ventures." },
 ];
