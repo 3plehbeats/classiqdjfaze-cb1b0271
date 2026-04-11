@@ -7,15 +7,41 @@ const Contact = () => {
   const twitterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Remove any existing twitter widgets script
-    const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
-    if (existingScript) existingScript.remove();
+    // Load Twitter widgets script
+    const loadTwitterWidget = () => {
+      if (twitterRef.current) {
+        // Clear previous content
+        twitterRef.current.innerHTML = '';
+        
+        // Create the timeline anchor
+        const anchor = document.createElement('a');
+        anchor.className = 'twitter-timeline';
+        anchor.setAttribute('data-theme', 'dark');
+        anchor.setAttribute('data-height', '600');
+        anchor.setAttribute('data-chrome', 'noheader nofooter noborders transparent');
+        anchor.href = 'https://twitter.com/classiqdjfaze?ref_src=twsrc%5Etfw';
+        anchor.textContent = 'Tweets by @classiqdjfaze';
+        twitterRef.current.appendChild(anchor);
+        
+        // Remove existing script if any
+        const existingScript = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
+        if (existingScript) existingScript.remove();
 
-    const script = document.createElement("script");
-    script.src = "https://platform.twitter.com/widgets.js";
-    script.async = true;
-    script.charset = "utf-8";
-    document.body.appendChild(script);
+        // Clear any cached twitter widgets
+        if ((window as any).twttr) {
+          delete (window as any).twttr;
+        }
+
+        // Load fresh script
+        const script = document.createElement("script");
+        script.src = "https://platform.twitter.com/widgets.js";
+        script.async = true;
+        script.charset = "utf-8";
+        document.body.appendChild(script);
+      }
+    };
+
+    loadTwitterWidget();
 
     return () => {
       const s = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
@@ -33,9 +59,9 @@ const Contact = () => {
             <div className="space-y-6">
               <h3 className="font-heading text-xl font-semibold">Reach Out</h3>
               <div className="space-y-4">
-                <a href="mailto:bookings@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
+                <a href="mailto:booking@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  bookings@classiqdjfaze.ng
+                  booking@classiqdjfaze.ng
                 </a>
                 <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
@@ -88,7 +114,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Live Tweets */}
+          {/* Live Twitter Timeline */}
           <div className="mt-16">
             <SectionHeader title="LIVE TWEETS" subtitle="Follow @classiqdjfaze on X" />
             <div className="bg-card border border-border rounded-lg p-4 flex justify-center">

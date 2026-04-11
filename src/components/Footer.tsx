@@ -33,23 +33,23 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm uppercase tracking-widest text-accent mb-3">Contact</h4>
           <div className="flex flex-col gap-3">
-            <a href="mailto:bookings@classiqdjfaze.ng" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Mail className="w-4 h-4 flex-shrink-0" /> bookings@classiqdjfaze.ng
+            <a href="mailto:booking@classiqdjfaze.ng" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
+              <Mail className="w-4 h-4 text-accent flex-shrink-0" /> booking@classiqdjfaze.ng
             </a>
             <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Mail className="w-4 h-4 flex-shrink-0" /> info@classiqdjfaze.ng
+              <Mail className="w-4 h-4 text-accent flex-shrink-0" /> info@classiqdjfaze.ng
             </a>
             <a href="tel:08034478512" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Phone className="w-4 h-4 flex-shrink-0" /> 08034478512
+              <Phone className="w-4 h-4 text-accent flex-shrink-0" /> 08034478512
             </a>
             <a href="tel:08087412512" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Phone className="w-4 h-4 flex-shrink-0" /> 08087412512
+              <Phone className="w-4 h-4 text-accent flex-shrink-0" /> 08087412512
             </a>
             <a href="https://classiqdjfaze.ng" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Globe className="w-4 h-4 flex-shrink-0" /> classiqdjfaze.ng
+              <Globe className="w-4 h-4 text-accent flex-shrink-0" /> classiqdjfaze.ng
             </a>
             <span className="flex items-center gap-2 text-muted-foreground text-sm">
-              <MapPin className="w-4 h-4 flex-shrink-0" /> MiTV/StarFM Plaza, Obafemi Awolowo Way, Alausa Ikeja
+              <MapPin className="w-4 h-4 text-accent flex-shrink-0" /> MiTV/StarFM Plaza, Obafemi Awolowo Way, Alausa Ikeja
             </span>
           </div>
         </div>
@@ -58,16 +58,16 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm uppercase tracking-widest text-accent mb-3">Follow</h4>
           <div className="flex gap-3">
-            <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
+            <a href="https://instagram.com/classiqdjfaze" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
+            <a href="https://facebook.com/classiqdjfaze" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
               <Facebook className="w-5 h-5" />
             </a>
             <a href="https://x.com/classiqdjfaze" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
               <Twitter className="w-5 h-5" />
             </a>
-            <a href="#" aria-label="YouTube" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
+            <a href="https://youtube.com/@classiqdjfaze" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-accent hover:bg-secondary/80 transition-colors">
               <Youtube className="w-5 h-5" />
             </a>
           </div>
