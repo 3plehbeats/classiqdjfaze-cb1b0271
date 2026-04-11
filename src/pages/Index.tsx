@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const highlights = [
   { icon: Disc3, title: "DJ Sets", desc: "Premium mixing for any event" },
-  { icon: Radio, title: "Radio Shows", desc: "Live on StarPlus & Konga FM" },
+  { icon: Radio, title: "Radio Shows", desc: "Live on StarPlus 101.5FM & Konga 103.7FM" },
   { icon: Music, title: "Music Production", desc: "Professional studio services" },
   { icon: Calendar, title: "Events", desc: "Weddings, corporate & more" },
 ];
