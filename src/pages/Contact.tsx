@@ -1,8 +1,39 @@
 import Layout from "@/components/Layout";
 import SectionHeader from "@/components/SectionHeader";
 import { Mail, Phone, Globe, MapPin } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const Contact = () => {
+  const twitterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    // Create the Twitter timeline anchor
+    if (twitterRef.current) {
+      twitterRef.current.innerHTML = '';
+      const anchor = document.createElement('a');
+      anchor.className = 'twitter-timeline';
+      anchor.setAttribute('data-theme', 'dark');
+      anchor.setAttribute('data-tweet-limit', '10');
+      anchor.setAttribute('data-chrome', 'noheader nofooter noborders transparent');
+      anchor.href = 'https://twitter.com/classiqdjfaze?ref_src=twsrc%5Etfw';
+      anchor.textContent = 'Tweets by classiqdjfaze';
+      twitterRef.current.appendChild(anchor);
+
+      // Load Twitter widgets script
+      const script = document.createElement('script');
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.async = true;
+      script.charset = 'utf-8';
+      document.body.appendChild(script);
+
+      return () => {
+        // Cleanup script on unmount
+        const existing = document.querySelector('script[src="https://platform.twitter.com/widgets.js"]');
+        if (existing) existing.remove();
+      };
+    }
+  }, []);
+
   return (
     <Layout>
       <section className="section-padding">
@@ -13,9 +44,9 @@ const Contact = () => {
             <div className="space-y-6">
               <h3 className="font-heading text-xl font-semibold">Reach Out</h3>
               <div className="space-y-4">
-                <a href="mailto:booking@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
+                <a href="mailto:booking@clasiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  booking@classiqdjfaze.ng
+                  booking@clasiqdjfaze.ng
                 </a>
                 <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
@@ -68,17 +99,11 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Live Twitter Timeline via syndication iframe */}
+          {/* Live Twitter Timeline */}
           <div className="mt-16">
             <SectionHeader title="LIVE TWEETS" subtitle="Latest posts from @classiqdjfaze on X" />
-            <div className="bg-card border border-border rounded-lg overflow-hidden flex justify-center p-4">
-              <iframe
-                src="https://syndication.twitter.com/srv/timeline-profile/screen-name/classiqdjfaze?dnt=true&embedId=twitter-widget-0&frame=false&hideBorder=true&hideFooter=true&hideHeader=true&hideScrollBar=false&lang=en&theme=dark&transparent=true"
-                title="@classiqdjfaze on X"
-                className="border-0 w-full max-w-[550px]"
-                style={{ height: "600px" }}
-                sandbox="allow-scripts allow-same-origin allow-popups"
-              />
+            <div className="bg-card border border-border rounded-lg overflow-hidden p-4">
+              <div ref={twitterRef} className="flex justify-center" />
             </div>
           </div>
         </div>
