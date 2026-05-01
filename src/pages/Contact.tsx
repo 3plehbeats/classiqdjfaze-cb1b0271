@@ -44,13 +44,19 @@ const Contact = () => {
             <div className="space-y-6">
               <h3 className="font-heading text-xl font-semibold">Reach Out</h3>
               <div className="space-y-4">
-                <a href="mailto:booking@clasiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
-                  <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  booking@clasiqdjfaze.ng (for bookings)
+                <a href="mailto:booking@clasiqdjfaze.ng" className="flex flex-col gap-1 text-muted-foreground text-sm hover:text-accent transition-colors">
+                  <span className="text-xs uppercase tracking-widest text-accent">For bookings</span>
+                  <span className="flex items-center gap-4">
+                    <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                    booking@clasiqdjfaze.ng
+                  </span>
                 </a>
-                <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
-                  <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  info@classiqdjfaze.ng (for enquiries)
+                <a href="mailto:info@classiqdjfaze.ng" className="flex flex-col gap-1 text-muted-foreground text-sm hover:text-accent transition-colors">
+                  <span className="text-xs uppercase tracking-widest text-accent">For enquiries</span>
+                  <span className="flex items-center gap-4">
+                    <Mail className="w-5 h-5 text-accent flex-shrink-0" />
+                    info@classiqdjfaze.ng
+                  </span>
                 </a>
                 <a href="tel:08034478512" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Phone className="w-5 h-5 text-accent flex-shrink-0" />
