@@ -46,11 +46,11 @@ const Contact = () => {
               <div className="space-y-4">
                 <a href="mailto:booking@clasiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  booking@clasiqdjfaze.ng
+                  booking@clasiqdjfaze.ng (for bookings)
                 </a>
                 <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                  info@classiqdjfaze.ng
+                  info@classiqdjfaze.ng (for enquiries)
                 </a>
                 <a href="tel:08034478512" className="flex items-center gap-4 text-muted-foreground text-sm hover:text-accent transition-colors">
                   <Phone className="w-5 h-5 text-accent flex-shrink-0" />
