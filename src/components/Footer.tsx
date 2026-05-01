@@ -45,11 +45,17 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-sm uppercase tracking-widest text-accent mb-3">Contact</h4>
           <div className="flex flex-col gap-3">
-            <a href="mailto:booking@classiqdjfaze.ng" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Mail className="w-4 h-4 text-accent flex-shrink-0" /> booking@classiqdjfaze.ng (for bookings)
+            <a href="mailto:booking@classiqdjfaze.ng" className="flex flex-col gap-0.5 text-muted-foreground text-sm hover:text-accent transition-colors">
+              <span className="text-xs uppercase tracking-widest text-accent">For bookings</span>
+              <span className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-accent flex-shrink-0" /> booking@classiqdjfaze.ng
+              </span>
             </a>
-            <a href="mailto:info@classiqdjfaze.ng" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
-              <Mail className="w-4 h-4 text-accent flex-shrink-0" /> info@classiqdjfaze.ng (for enquiries)
+            <a href="mailto:info@classiqdjfaze.ng" className="flex flex-col gap-0.5 text-muted-foreground text-sm hover:text-accent transition-colors">
+              <span className="text-xs uppercase tracking-widest text-accent">For enquiries</span>
+              <span className="flex items-center gap-2">
+                <Mail className="w-4 h-4 text-accent flex-shrink-0" /> info@classiqdjfaze.ng
+              </span>
             </a>
             <a href="tel:08034478512" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-accent transition-colors">
               <Phone className="w-4 h-4 text-accent flex-shrink-0" /> 08034478512
